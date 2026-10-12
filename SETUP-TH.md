@@ -36,11 +36,12 @@ const SUPABASE_ANON_KEY = "eyJ.....";
 
 ## ขั้นที่ 3 เผยแพร่เป็นเว็บ
 
-1. เข้า https://app.netlify.com/drop
-2. ลากไฟล์ `brixly-beer-game.html` ไปวาง
-   - ถ้าเว็บต้องการโฟลเดอร์ ให้สร้างโฟลเดอร์ เปลี่ยนชื่อไฟล์ในโฟลเดอร์เป็น `index.html` แล้วลากทั้งโฟลเดอร์ไปวาง
-3. จะได้ลิงก์ เช่น `https://xxxx.netlify.app` ใช้ลิงก์นี้สอนได้เลย
-   - สมัคร Netlify (ฟรี) เพื่อเก็บลิงก์ไว้ถาวร
+1. ใส่ค่า Supabase ลงใน `index.html` ตามขั้นที่ 2 แล้ว commit และ push ขึ้น GitHub
+2. เข้า https://vercel.com/new แล้วล็อกอินด้วย GitHub
+3. เลือก repo `brixly-beer-game` แล้วกด Import
+4. Framework Preset เลือก **Other** ไม่ต้องใส่ Build Command แล้วกด Deploy
+5. จะได้ลิงก์ เช่น `https://brixly-beer-game.vercel.app` ใช้ลิงก์นี้สอนได้เลย
+   - ทุกครั้งที่ push เข้า branch `main` Vercel จะ deploy เวอร์ชันใหม่ให้อัตโนมัติ
 
 ## ก่อนสอน (แนะนำ)
 
